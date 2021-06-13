@@ -1,3 +1,11 @@
+/*
+ * Title: Product Cart Logic 
+ * Description:  Add product and  remove product  on cart and also increment and decrrnt logic  
+ * Author: SMR saimon(Sultan Mahmud )
+ * Date: 14/06/21
+ *
+ */
+
 const allProducts = [
   { id: 1, name: "laptop", quentity: 4, prie: 340, ratting: 5, holeSell: 300 },
   {
@@ -18,7 +26,7 @@ const allProducts = [
   },
 ];
 
-// product increment decrement 
+// product increment/decrement 
 
 const incressProductQuentity = (id) => {
   const productIndex = allProducts.findIndex((x) => x.id === id);
@@ -54,6 +62,13 @@ const removeProductFromCart=(id)=>{
 
 }
 console.log(removeProductFromCart(1))
+
+
+
+
+
+
+
 
 
 
